@@ -2,120 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Layout</title>
+    <title>Responsive Movie Layout</title>
+
+    <!-- Bootstrap 4.6 CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-</head><style>
-.movie .body img{
-    width: 100%;
-    height: 300px;
-}
-.movie .footer img{
-    width: 20px;
-}
-a{
-    font-size: 12px;
-    display: block;
-}
-h4{
-    padding: 5px;
-    font-size: 15px;
-}
 
-</style>
+    <style>
+        .movie-img {
+            height: 300px;
+            object-fit: cover;
+        }
+        .trailer-link {
+            font-size: 13px;
+            text-decoration: none;
+            color: #333;
+        }
+        .trailer-link img {
+            width: 20px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
 <body>
-    <div class="container py-4
-    px-4">
-        <div class="row">
-            <div class="col-md-3 mb-2">
-                <div class="movie">
-                    <div class="header">
-                        <h4>1. Dog_Man.jpg</h4>
-                    </div>
-                    <div class="body">
-                        <img src="./images/Dog_Man.jpg" alt="">
-                    </div>
-                    <div class="footer">
-                        <a href="https://en.wikipedia.org/wiki/Dog_Man_(film)">https://en.wikipedia.org/wiki/Dog_Man_(film)</a>
-                        <a href="https://www.imdb.com/title/tt10954718/?lctg=6050f061f98ec7553cebfa1e&ref_=vp_close" target="_blank" style="text-decoration: none;display: flex;justify-content: center;align-items: center;color:#333;">
-                            <img src="./images/youtube.png" alt="YouTube Logo" style="margin-right: 10px;">
-                            <span> | Dog_Man | Official Trailer</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-2">
-                <div class="movie">
-                    <div class="header">
-                        <h4>2. Locked</h4>
-                    </div>
-                    <div class="body">
-                        <img src="./images/Locked.jpg" alt="">
-                    </div>
-                    <div class="footer">
-                        <a href="https://en.wikipedia.org/wiki/Locked_(film)">https://en.wikipedia.org/wiki/Locked_(film)</a>
-                        <a href="https://https://www.imdb.com/title/tt26671996" target="_blank" style="text-decoration: none;display: flex;justify-content: center;align-items: center;color:#333;">
-                            <img src="./images/youtube.png" alt="YouTube Logo" style="margin-right: 10px;">
-                            <span> | Locked | Official Trailer</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-2">
-                <div class="movie">
-                    <div class="header">
-                        <h4>3. Badass_Ravikumar </h4>
-                    </div>
-                    <div class="body">
-                        <img src="./images/Badass_Ravikumar.jpg" alt="">
-                    </div>
-                    <div class="footer">
-                        <a href="https://en.wikipedia.org/wiki/Badass_Ravi_Kumar">https://en.wikipedia.org/wiki/Badass_Ravi_Kumar</a>
-                        <a href="https://www.imdb.com/video/vi573950233/?playlistId=tt23220552&ref_=tt_ov_ov_vi" target="_blank" style="text-decoration: none;display: flex;justify-content: center;align-items: center;color:#333;">
-                            <img src="./images/youtube.png" alt="YouTube Logo" style="margin-right: 10px;">
-                            <span> | Badass_Ravikumar | Official Trailer</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-md-3 mb-2">
-                <div class="movie">
-                    <div class="header">
-                        <h4>4. Running_Man</h4>
-                    </div>
-                    <div class="body">
-                        <img src="./images/Running_Man.jpg" alt="">
-                    </div>
-                    <div class="footer">
-                        <a href="https://en.wikipedia.org/wiki/Running_Man_(TV_program)">https://en.wikipedia.org/wiki/Running_Man_(TV_program)</a>
-                        <a href="https://www.youtube.com/watch?v=KD18ddeFuyM&t=7s" target="_blank" style="text-decoration: none;display: flex;justify-content: center;align-items: center;color:#333;">
-                            <img src="./images/youtube.png" alt="YouTube Logo" style="margin-right: 15px;">
-                            <span> | Running_Man | Official Trailer</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+<div class="container py-4">
+    <div class="row">
 
-            <div class="col-md-3 mb-2">
-                <div class="movie">
-                    <div class="header">
-                        <h4>5. Fight_or_Flight</h4>
-                    </div>
-                    <div class="body">
-                        <img src="./images/Fight_or_Flight.jpg" alt="">
-                    </div>
-                    <div class="footer">
-                        <a href="https://en.wikipedia.org/wiki/Fight_or_Flight_(2025_film)">https://en.wikipedia.org/wiki/Fight_or_Flight_(2025_film)</a>
-                        <a href="https://www.youtube.com/watch?v=SdsHRpjfqEI" target="_blank" style="text-decoration: none;display: flex;justify-content: center;align-items: center;color:#333;">
-                            <img src="./images/youtube.png" alt="YouTube Logo" style="margin-right: 15px;">
-                            <span> | Fight_or_Flight | Official Trailer</span>
-                        </a>
-                    </div>
+        <!-- Movie 1 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card h-100">
+                <div class="card-header">
+                    <h6 class="mb-0">1. Dog Man</h6>
+                </div>
+                <img src="./images/Dog_Man.jpg" class="card-img-top movie-img img-fluid" alt="Dog Man">
+                <div class="card-body text-center">
+                    <a href="https://en.wikipedia.org/wiki/Dog_Man_(film)" target="_blank">Wikipedia</a>
+                    <a href="https://www.imdb.com/title/tt10954718/" target="_blank" class="d-flex justify-content-center align-items-center trailer-link mt-2">
+                        <img src="./images/youtube.png" alt="YouTube">
+                        <span>Official Trailer</span>
+                    </a>
                 </div>
             </div>
         </div>
+
+        <!-- Movie 2 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card h-100">
+                <div class="card-header">
+                    <h6 class="mb-0">2. Locked</h6>
+                </div>
+                <img src="./images/Locked.jpg" class="card-img-top movie-img img-fluid" alt="Locked">
+                <div class="card-body text-center">
+                    <a href="https://en.wikipedia.org/wiki/Locked_(film)" target="_blank">Wikipedia</a>
+                    <a href="https://www.imdb.com/title/tt26671996/" target="_blank" class="d-flex justify-content-center align-items-center trailer-link mt-2">
+                        <img src="./images/youtube.png" alt="YouTube">
+                        <span>Official Trailer</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat same structure for other movies -->
+
     </div>
+</div>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
